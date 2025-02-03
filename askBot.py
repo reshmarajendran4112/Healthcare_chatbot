@@ -85,7 +85,7 @@ class AskBot:
         self.send_button.grid(row=1, column=2, padx=0, pady=10, sticky="nsew")
         
         
-        self.chat_history = tk.Text(main_frame, wrap="word", state="disabled", font=("times new roman", 11),
+        self.chat_history = tk.Text(main_frame, wrap="word", state="disabled", font=("times new roman", 11), 
                              bg="#37474F", fg="white")
         self.scrollbar = ttk.Scrollbar(main_frame, command=self.chat_history.yview)
         self.chat_history.config(yscrollcommand=self.scrollbar.set)
